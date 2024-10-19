@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e2833, #222f3d);
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+header .tagline {
+    font-size: 1.5rem;
+    color: #ffd700;
+}
+
+.in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image {
+    height: 400px;
+    width: 350px;
+    background-image: url("raj.jpg");
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.intro {
+    max-width: 400px;
+    margin-left: 20px;
+    transition: transform 0.5s;
+}
+
+.intro:hover {
+    transform: translateY(-10px);
+}
+
+.intro h2 {
+    text-align: center;
+    font-family: cursive;
+    color: #ffd700;
+}
+
+.panel {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-grid, .certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.project-card, .certificate-card {
+    background: #1e2833;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.project-card:hover, .certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+.hobby-list h3 {
+    margin: 10px 0;
+    color: #ffd700;
+}
